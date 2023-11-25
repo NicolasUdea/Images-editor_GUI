@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>560</width>
+    <height>470</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:1, x2:0, y2:0, stop:0 rgba(105, 105, 105, 255), stop:1 rgba(47, 79, 79, 255));
+</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QVBoxLayout" name="verticalLayout" stretch="1,7,1,1">
+    <item>
+     <layout class="QHBoxLayout" name="superior">
+      <item>
+       <widget class="QPushButton" name="abrir">
+        <property name="font">
+         <font>
+          <family>Arial</family>
+          <weight>75</weight>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+
+</string>
+        </property>
+        <property name="text">
+         <string>Abrir</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="guardar">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Guardar</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cerrar">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Cerrar</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="visor_img">
+      <item>
+       <widget class="QLabel" name="imagen">
+        <property name="text">
+         <string/>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="operaciones">
+      <item>
+       <widget class="QPushButton" name="erosionar">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Erosión</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="dilatar">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Dilatación</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="cierre">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Cierre</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QPushButton" name="apertura">
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #808080;
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+}
+
+QPushButton:hover {
+    background-color: #A9A9A9;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Apertura</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QHBoxLayout" name="slider">
+      <item>
+       <widget class="QLabel" name="kernel_msg">
+        <property name="styleSheet">
+         <string notr="true">QLabel {
+    color: #FFFFFF;
+    font-family: Arial, sans-serif;
+    font-size: 12px;
+    padding: 10px;
+}
+</string>
+        </property>
+        <property name="text">
+         <string>Tamaño del Kernel: </string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QSlider" name="horizontalSlider">
+        <property name="styleSheet">
+         <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #999999;
+    height: 8px;
+    background: qlineargradient(x1:0, y1:0, x2:0, y2:1, stop:0 #B1B1B1, stop:1 #c4c4c4);
+    margin: 2px 0;
+}
+
+QSlider::handle:horizontal {
+    background: qlineargradient(x1:0, y1:0, x2:1, y2:1, stop:0 #b4b4b4, stop:1 #8f8f8f);
+    border: 1px solid #5c5c5c;
+    width: 18px;
+    margin: -2px 0;
+    border-radius: 3px;
+}
+</string>
+        </property>
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
